@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pharmaceutical Products & Formulations Catalogue | AALA Pharma</title>
+  <meta name="description" content="Explore AALA Pharma's comprehensive pharmaceutical catalogue featuring WHO-GMP certified tablets, capsules, oral syrups, dry powder injectables, and topical ointments.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A3663'/><path d='M30 70 L50 25 L70 70 M38 52 L62 52' stroke='%23009688' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="topbar">
+    <div class="container">
+      <div class="topbar-content">
+        <div class="topbar-left">
+          <div class="topbar-item">
+            <span class="topbar-badge"><i class="fa-solid fa-award"></i> WHO-GMP & ISO 9001:2015</span>
+          </div>
+          <div class="topbar-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Quila, Aonla, Bareilly 243301</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919876543211">+91 98765 43211</a>
+          </div>
+          <div class="topbar-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@aalapharma.com">info@aalapharma.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="AALA Pharma Home">
+          <div class="brand-symbol">
+            <i class="fa-solid fa-mortar-pestle"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">AALA <span>Pharma</span></span>
+            <span class="brand-tagline">Care • Science • Life</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="primary-navigation">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="quality.html" class="nav-link">Manufacturing & Quality</a></li>
+          <li><a href="rnd.html" class="nav-link">R&D</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-file-signature"></i> Partner With Us
+          </a>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-nav-backdrop"></div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Products</span>
+        </div>
+        <h1>Formulations & Product Catalogue</h1>
+        <p>
+          Discover our comprehensive portfolio of high-purity, bioequivalent medicines covering core acute and chronic therapeutic areas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalogue Search & Filter Interface -->
+    <section class="section">
+      <div class="container">
+        <!-- Search Bar with Live Filter -->
+        <div class="product-search-bar reveal">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="product-search-input" placeholder="Search by brand name, active molecule, or therapeutic category..." aria-label="Search pharmaceutical products">
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="product-filters reveal" role="tablist" aria-label="Filter products by dosage category">
+          <button type="button" class="filter-btn active" data-filter="all">All Formulations</button>
+          <button type="button" class="filter-btn" data-filter="tablets">Tablets</button>
+          <button type="button" class="filter-btn" data-filter="capsules">Capsules</button>
+          <button type="button" class="filter-btn" data-filter="syrups">Syrups & Liquids</button>
+          <button type="button" class="filter-btn" data-filter="injectables">Injectables</button>
+          <button type="button" class="filter-btn" data-filter="ointments">Ointments & Gels</button>
+        </div>
+
+        <!-- Results Counter -->
+        <div class="text-center" style="margin-bottom: 2rem;">
+          <span id="product-results-count" style="font-weight: 600; color: #64748B; font-size: 0.95rem;">
+            Loading formulations...
+          </span>
+        </div>
+
+        <!-- Dynamic Product Catalogue Grid -->
+        <div class="products-grid" id="products-catalogue-grid" aria-live="polite">
+          <!-- Populated by JavaScript from AALA_PRODUCTS -->
+        </div>
+
+        <!-- Info Notice for Medical Professionals -->
+        <div class="footer-disclaimer-box reveal" style="margin-top: 3.5rem;">
+          <strong><i class="fa-solid fa-circle-info"></i> For Registered Medical Practitioners & Trade Partners:</strong>
+          The formulation data presented herein is for informational reference. Batch availability, minimum order quantities (MOQ), and institutional price lists can be requested directly from our commercial division.
+        </div>
+      </div>
+    </section>
+
+    <!-- Franchise & Contract Manufacturing Callout -->
+    <section class="section section-bg-alt">
+      <div class="container">
+        <div class="feature-row">
+          <div class="feature-content reveal">
+            <span class="section-eyebrow"><i class="fa-solid fa-handshake"></i> Business Opportunities</span>
+            <h2>PCD Pharma Franchise & Third-Party Manufacturing</h2>
+            <p>
+              Are you looking to establish or expand your pharmaceutical brand? AALA Pharma offers monopoly-based PCD franchise distribution rights and contract manufacturing solutions with low turnaround times and complete regulatory dossier support.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Complete promotional backup (visual aids, LBLs, reminder cards, MR bags)</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-quality Alu-Alu, Blister, and Mono-Carton packaging aesthetics</li>
+              <li><i class="fa-solid fa-circle-check"></i> Competitive net rates ensuring handsome commercial margins</li>
+            </ul>
+            <div style="margin-top: 2rem;">
+              <a href="contact.html?type=franchise" class="btn btn-primary">
+                <i class="fa-solid fa-file-signature"></i> Apply for Franchise / Third-Party
+              </a>
+            </div>
+          </div>
+          <div class="feature-img-card reveal">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80" alt="AALA Pharma blister packaging and finished pharmaceutical strips" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Product Detail Modal Dialog -->
+  <div class="modal-overlay" id="product-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close Product Details Dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content-grid">
+        <div class="modal-product-img">
+          <img src="" alt="" class="modal-img-tag">
+        </div>
+        <div class="modal-details">
+          <span class="badge badge-pill-accent modal-therapeutic" style="margin-bottom: 0.5rem;"></span>
+          <h3 class="modal-title" id="modal-product-title"></h3>
+          <p class="modal-comp"></p>
+
+          <table class="modal-table">
+            <tbody>
+              <tr>
+                <td>Dosage Form</td>
+                <td class="modal-dosage"></td>
+              </tr>
+              <tr>
+                <td>Packaging</td>
+                <td class="modal-packing"></td>
+              </tr>
+              <tr>
+                <td>Indications</td>
+                <td class="modal-indications"></td>
+              </tr>
+              <tr>
+                <td>Storage Conditions</td>
+                <td class="modal-storage"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <a href="#" class="btn btn-primary btn-sm modal-enquiry-btn">
+              <i class="fa-solid fa-paper-plane"></i> Enquire for This Product
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-symbol">
+              <i class="fa-solid fa-mortar-pestle"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #fff;">AALA <span style="color: #009688;">Pharma</span></span>
+              <span class="brand-tagline" style="color: #94A3B8;">Care • Science • Life</span>
+            </div>
+          </div>
+          <p>
+            A premier pharmaceutical formulations company dedicated to delivering high-efficacy, affordable, and WHO-GMP compliant medications across India.
+          </p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="AALA Pharma on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="AALA Pharma on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="AALA Pharma on X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="AALA Pharma on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Company Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="quality.html"><i class="fa-solid fa-angle-right"></i> Manufacturing & Quality</a></li>
+            <li><a href="rnd.html"><i class="fa-solid fa-angle-right"></i> Research & Development</a></li>
+            <li><a href="careers.html"><i class="fa-solid fa-angle-right"></i> Career Opportunities</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Formulation Categories</div>
+          <ul class="footer-links">
+            <li><a href="products.html?cat=tablets"><i class="fa-solid fa-angle-right"></i> Tablets & Capsules</a></li>
+            <li><a href="products.html?cat=syrups"><i class="fa-solid fa-angle-right"></i> Oral Syrups & Liquids</a></li>
+            <li><a href="products.html?cat=injectables"><i class="fa-solid fa-angle-right"></i> Sterile Injectables</a></li>
+            <li><a href="products.html?cat=ointments"><i class="fa-solid fa-angle-right"></i> Ointments & Topicals</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Antibiotics Portfolio</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Cardiovascular Medicines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Registered Office</div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>AALA Pharma</strong><br>
+              Quila, Aonla, Bareilly 243301,<br>
+              Uttar Pradesh, India
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <a href="tel:+919876543211">+91 98765 43211</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <a href="mailto:info@aalapharma.com">info@aalapharma.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong><i class="fa-solid fa-triangle-exclamation"></i> Important Notice:</strong> Information on this website is for general purposes only and not a substitute for medical advice. Always consult a qualified healthcare professional regarding any medical condition or prescription medication.
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AALA Pharma. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Pharmacovigilance</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Scroll to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
